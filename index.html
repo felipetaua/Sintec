@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./commonStyle.css">
+    <link rel="stylesheet" href="./ModalEventos.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./cardEventos.css">
+    <script defer src="https://kit.fontawesome.com/aa7454d09f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div id="logo">
+            <a href="./index.html">
+            <img src="./img/logo-SINTEC.png" alt="" height="80px">
+            </a>
+        </div>
+        <ul class="nav" id="nav">
+            <ul class="navLogo">
+                <a href="./index.html">
+                     <img src="./img/logo-SINTEC.png" alt="" height="130px">
+               </a>
+            </ul>
+
+            <li class="nav-link"><a href="./index.html">Home</a></li>
+            <li class="nav-link"><a href="./eventos.html">Eventos</a></li>
+            <li class="nav-link"><a href="./aboutus.html">Conheça</a></li>
+            <li class="nav-link"><a href="./contact.html">Forms</a></li>
+            <li class="sociallinkContainer">
+                <img class="sociallink" src="./img/fabook-icon-white.svg" alt="">
+                <img class="sociallink" src="./img/inkedin-icon-white.svg" alt="">
+                <img class="sociallink" src="./img/whatsapp-icon-white.svg" alt="">
+            </li>
+        </ul>
+        <div id="barContainer">
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Hero page -->
+    <section class="hero gridSection">
+        <div class="sectionDesc">
+            <h1 class="headline">
+                Semana da Informática <span class="cryptoText">SINTEC</span>.
+            </h1>
+            <p class="sub-headline">
+                A primeira turma a criar um evento de técnologia no Senac Nova Londrina, alunos e convidados, onde profissionais da área est 
+            </p>
+            <div class="btnContainer">
+                <a href="./contact.html"> <button class="btn btn1">Formulários</button></a>
+                <a href="www.google.com"> <button class="btn btn2">Video abertura <i class="fa-solid fa-play"></i></button></a>
+            </div>
+        </div>
+        <div class="sectionPic bouncepic" id="sectionPic">
+            <img src="./img/hero-image.png" alt="">
+        </div>  
+    </section>
+
+    <!-- Carousel -->
+    <section>
+        <div class="carouselContainer">
+            <div class="eachCarousel eachCarouselBorder">
+                <img src="./img/computador.gif" alt="" class="logoCarousel">
+                <article class="carouselDesc">
+                    <h1 class="carouselTitle">Segunda-feira</h1>
+                    <p class="carouselPara">Bate-papo com profissionais da área da técnologia.</p>
+                    <div class="carouselPrice">
+                        <h3>16/10/24 </h3>
+                        <span class="rect"></span>
+                        <h3 class="carouselDiscount"> 14h</h3>
+                    </div>
+                    <button class="btn carouselBtn" onclick="window.dialogSeg.showModal();">Detalhes</button>
+                </article>
+            </div>
+    
+            <div class="eachCarousel">
+                <img src="./img/inteligencia-artificial.gif" alt="" class="logoCarousel">
+                <article class="carouselDesc">
+                    <h1 class="carouselTitle">Terça-feira</h1>
+                    <p class="carouselPara">Competição de equipes testando conhecimentos dos participantes.</p>
+                    <div class="carouselPrice">
+                        <h3>12/10/24</h3>
+                        <span class="rect"></span>
+                        <h3 class="carouselDiscount">14h</h3>
+                    </div>
+                    <button class="btn carouselBtn" onclick="window.dialogTer.showModal();">Detalhes</button>
+                </article>
+            </div>
+    
+            <div class="eachCarousel">
+                <img src="./img/museu.gif" alt="" class="logoCarousel">
+                <article class="carouselDesc">
+                    <h1 class="carouselTitle">Quarta-feira</h1>
+                    <p class="carouselPara">Alunos apresentam projetos desenvolvidos ao longo do técnico.
+              </p>
+                    <div class="carouselPrice">
+                        <h3>13/10/24</h3>
+                        <span class="rect"></span>
+                        <h3 class="carouselDiscount">18h</h3>
+                    </div>
+                    <button class="btn carouselBtn" onclick="window.dialogQuar.showModal();">Detalhes</button>
+                </article>
+            </div>
+    
+            <div class="eachCarousel">
+                <img src="./img/jogos.gif" alt="" class="logoCarousel">
+                <article class="carouselDesc">
+                    <h1 class="carouselTitle">Quinta-feira</h1>
+                    <p class="carouselPara">Jogos eletronicos e físicos, promovendo diversão.
+              </p>
+                    <div class="carouselPrice">
+                        <h3>16/10/24</h3>
+                        <span class="rect"></span>
+                        <h3 class="carouselDiscount">14h</h3>
+                    </div>
+                    <button class="btn carouselBtn" onclick="window.dialogQui.showModal();">Detalhes</button>
+                </article>
+            </div>
+    
+            <div class="eachCarousel">
+                <img src="./img/apresentacao.gif" alt="" class="logoCarousel">
+                <article class="carouselDesc">
+                    <h1 class="carouselTitle">Sexta-feira</h1>
+                    <p class="carouselPara">Demonstração de tecnologias inovadoras com apresentações.
+</p>
+                    <div class="carouselPrice">
+                        <h3>18/10/24</h3>
+                        <span class="rect"></span>
+                        <h3 class="carouselDiscount">14h</h3>
+                    </div>
+                    <button class="btn carouselBtn" onclick="window.dialogSex.showModal();">Detalhes</button>
+                </article>
+            </div>
+        </div>
+        <div class="carouselIndicator">
+            <div class="indicator activeIndicator" onclick="slideCarousel(0)"></div>
+            <div class="indicator" onclick="slideCarousel(1)"></div>
+            <div class="indicator" onclick="slideCarousel(2)"></div>
+            <div class="indicator" onclick="slideCarousel(3)"></div>
+            <div class="indicator" onclick="slideCarousel(4)"></div>
+        </div>
+    </section>
+
+
+    <!-- Processes -->
+    <section class="gridSection">
+        <div class="sectionDesc processessDesc">
+            <h1 class="sectionHeader">Objetivo da Semana</h1>
+            <p class="sectionPara">We do not charge any fees and we do not require 
+              any registration. You keep your privacy and your 
+              coins.
+            </p>
+            <div class="eachProcesses">
+                <img src="./img/handshake-icon-white-line.svg" alt="handshake">
+                <div class="eachprocessesPara">
+                    <h1 class="processTitle">Estimular a criatividade e inovação</h1>
+                    <p>
+                        Proporcionar atividades que reforcem o aprendizado técnico, como maratonas de conhecimento e exposições de projetos.
+                    </p>
+                </div>
+            </div>
+            <div class="eachProcesses">
+                <img src="./img/cart-icon-white-line.svg" alt="handshake">
+                <div class="eachprocessesPara">
+                    <h1 class="processTitle">Incentivar a interação com profissionais da área</h1>
+                    <p>
+                      Oferecer aos alunos a oportunidade de conversar com profissionais experientes, tirando dúvidas e conhecendo melhor o mercado de trabalho.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="sectionPic bouncepic processesPic" id="sectionPic">
+            <img src="./img/chain-process-img.png" alt="">
+        </div>
+    </section>
+
+    <!-- Markets -->
+    <section class="gridSection">
+        <div class="sectionDesc marketDesc">
+            <h1 class="sectionHeader">Marcas Formativas</h1>
+            <p class="sectionPara">O Senac forma verdadeiros cidadãos preparados para TRANSFORMAR o mercado de trabalho. Por aqui, desenvolvemos características nos nossos alunos que vão além do conhecimento técnico de cada curso.
+            </p>
+            <div class="eachMarket">
+                <img src="./img/planta-em-crescimento.png" alt="handshake" width="60px" height="60px">
+                <div>
+                    <h1 class="marketTitle">Atividade Sustentavel</h1>
+                    <p class="darkPara">
+                        Promove o consumo consciente e o uso racional dos recursos naturais respeitando a diversidade e a ética nas relações interpessoais e profissionais.
+                    </p>
+                </div>
+            </div>
+            <div class="eachMarket">
+                <img width="60px" height="60px" src="./img/olho.png" alt="handshake">
+                <div>
+                    <h1 class="marketTitle">Visão Crítica</h1>
+                    <p class="darkPara">
+                        Estimula a capacidade de analisar situações, informações e atitudes para tomar decisões fundamentadas e objetivas, mesmo que em diferentes contextos.
+                    </p>
+                </div>
+            </div>
+            <div class="eachMarket">
+                <img src="./img/support-icon-color.svg" alt="handshake">
+                <div>
+                    <h1 class="marketTitle">Colaboração e Comunicação</h1>
+                    <p class="darkPara">
+                        Alicerces para a construção de relações saudáveis e para o alcance de metas e objetivos organizacionais de modo eficiente.
+                    </p>
+                </div>
+            </div>
+            <div class="eachMarket">
+                <img src="./img/online-icon-color.svg" alt="handshake">
+                <div>
+                    <h1 class="marketTitle">Autonomia Digital</h1>
+                    <p class="darkPara">
+                        Busca se atualizar sobre as tecnologias relacionadas à sua área e identifica oportunidades para incorporar a sua atividade.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="sectionPic marketspicSection" id="sectionPic">
+           <h1 class="marketspicHeader">Tranformação</h1>
+            <div class="marketsPicContainer">
+                <div class="marketPic marketPic1">
+                    <img src="./img/educacao.png" alt="">
+                    <article class="marketTitle">Educação</article>
+                </div>
+    
+                <div class="marketPic marketPic2">
+                    <img src="./img/conhecimento.png" alt="">
+                    <article class="marketTitle">Ideias</article>
+                </div>
+    
+                <div class="marketPic marketPic3">
+                    <img src="./img/tecnologica.png" alt="">
+                    <article class="marketTitle">Tecnologia</article>
+                </div>
+    
+                <div class="marketPic marketPic4">
+                    <img src="./img/handshake-icon-white.svg" alt="">
+                    <article class="marketTitle">Conexões</article>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <!-- Dashboard -->
+    <section class="gridSection">
+        <div class="sectionDesc dashboardDesc">
+            <h1 class="sectionHeader">O grupo</h1>
+            <p class="sectionPara">
+                Todos no grupo se dedicam muito, para conseguir fazer o que nos foi proposto estamos em sintonia, todos com os mesmos objetivos!
+            </p>
+            <button class="btn">Explore Now</button>
+        </div>
+
+        <div class="sectionPic dashboardPic">
+            <img src="./img/O-grupo.png" alt="" class="oGrupoImg">
+        </div>
+
+    </section>
+
+    <div class="fundSection">
+        <div class="sectionDesc">
+            <h1 class="sectionHeader">Habilidades Utilizadas</h1>
+            <p class="sectionPara">
+                Cada aluno tem seu diferencial pessoal o segredo está na combinação conseguimos fazer qualquer coisa, ainda mais com tudo que nós ensinaram no SENAC.
+            </p>
+            <div class="fundsContainer">
+                <div class="fund">
+                    <img src="./img/prazo-final.gif" alt="Criar prazos"class="skillsImg">
+                    <h1 class="fundType">Planejar</h1>
+                    <p class="darkPara">
+                        Definir metas, caminhos a se seguir organizando.
+                    </p>
+                </div>
+
+                <div class="fund">
+                    <img src="./img/observador.gif" alt="Importancia no que precisa" class="skillsImg">
+                    <h1 class="fundType">Foco</h1>
+                    <p class="darkPara">
+                        Foco no que realmente precisa sem muita enrolação.
+                    </p>
+                </div>
+
+                <div class="fund">
+                    <img src="./img/ideia.gif" alt="Ideias criar e juntar" class="skillsImg">
+                    <h1 class="fundType">Proatividade</h1>
+                    <p class="darkPara">
+                      Procurar a solução para o problema saber o momento de pedir ajuda.
+                    </p>
+                </div>
+
+                <div class="fund">
+                    <img src="./img/avaliacao.gif" alt="Melhorar o qur precisa" class="skillsImg">
+                    <h1 class="fundType">Feedbacks</h1>
+                    <p class="darkPara">
+                        Com Feedbacks ajuda no que realmente precisamos melhorar!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="gridSection">
+        <div class="sectionDesc newsletterDesc">
+            <h1 class="sectionHeader">Participação nos eventos!</h1>
+            <p class="sectionPara">
+                Ei está perdendo tempo venha participar voce não vai se arrepender! 
+            </p>
+            <form action="#" class="newsletter">
+              <a href=""><button type="submit" class="btn primaryBtn">Participe</button></a>
+            </form>
+        </div>
+        <div class="sectionPic bouncepic newsletterPic">
+            <img src="./img/newsletter.png" alt="">
+        </div>
+    </section>
+
+    <footer>
+        <div class="joinSection">
+            <div class="joinDesc">
+                <h1 class="sectionHeader">Avalie sua Experiência</h1>
+                <p class="sectionPara">
+                    Deixe seu Feedback para os desenvolvedores, Agradecido!
+                </p>
+            </div>
+            <a href="#"><button class="btn primaryBtn">Envie</button></a>
+        </div>
+        <div class="footerlinksContainer">
+            <div class="footerAboutus">
+                <img src="./img/logo-SINTEC.png" alt="" height="80px">
+                <p class="darkPara">A SINTEC é organizada pelo alunos e instrutores do Técnico de Informática para Internet que desejam compartilhar seu conhecimento e paixão pelo mundo digital.
+                </p>
+                <div class="footersociallinkContainer">
+                    <img class="sociallink" src="./img/fabook-icon-white.svg" alt="">
+                    <img class="sociallink" src="./img/inkedin-icon-white.svg" alt="">
+                    <img class="sociallink" src="./img/whatsapp-icon-white.svg" alt="">
+                </div>
+            </div>
+
+            <div class="footerlink">
+                <h1 class="linkTitle">Explore</h1>
+                <a href="./aboutus.html" class="eachLink">About us</a>
+                <a href="#" class="eachLink">FAQ</a>
+                <a href="#" class="eachLink">Blog</a>
+                <a href="https://github.com/felipetaua" class="eachLink">Contact</a>
+            </div>
+
+            <div class="footerlink">
+                <h1 class="linkTitle">Nav</h1>
+                <a href="./index.html" class="eachLink">Home</a>
+                <a href="./eventos.html" class="eachLink">Programação</a>
+                <a href="./aboutus.html" class="eachLink">Conheça</a>
+                <a href="./contact.html" class="eachLink">Forms</a>
+            </div>
+
+            <div class="footerlink">
+                <h1 class="linkTitle">Resource</h1>
+                <a href="#" class="eachLink">Style Guide</a>
+                <a href="#" class="eachLink">Change Log</a>
+                <a href="#" class="eachLink">License</a>
+            </div>
+        </div>
+
+        <div class="footerCopyright">
+             <p>&copy; Direitos Reservados SINTEC 2024 desenvolvido por <a href="https://github.com/felipetaua" class="developedBy" target="_blank">felipetauaSystems</a>.</p>
+        </div>
+    </footer>
+
+<!-- Modal dias da semana seg a sexta -->
+<dialog id="dialogSeg">
+	<h2 class="carouselTitle">Segunda-feira - 14/10/2024</h2>
+	<p class="carouselPara">
+	  <h3> Abertura do evento</h3>
+      Convidados da área da tecnologia farão um bate-papo com alunos esclarecendo dúvidas mostrando como é o mercado, que erros não cometer é importante guardar as perguntas para se fazer!
+	</p>
+	<br>
+	<p class="carouselPara"><b>Local</b>: Auditório do SENAC</p>
+	<p class="carouselPara"><b>Período</b>: Matutino</p>
+		<p class="carouselPara"><b>Horário</b>: Início as 00:00</p>
+	
+	<button onclick="window.dialogSeg.close();" aria-label="close" class="x">❌</button>
+</dialog>
+
+<dialog id="dialogTer">
+	<h2 class="carouselTitle">Terça-feira - 15/10/2024</h2>
+		<p class="carouselPara">
+	  <h3> Maratona de Informática</h3>
+      Uma competição de para saber o conhecimento das equipes em cada uma das áreas do conhecimento selecionada( História do SENAC, Conhecimento Gerais, Informática), com uma premiação, quem será a equipe vencedora!
+	</p>
+	<br>
+	<p class="carouselPara"><b>Local</b>: Auditório do SENAC</p>
+	<p class="carouselPara"><b>Período</b>: Matutino</p>
+		<p class="carouselPara"><b>Horário</b>: Início as 00:00</p>
+		<br>
+		<ul>
+		  <li><b>Exigencia</b>: Inscrição para Participar</li>
+		</ul>
+		<br>
+		<button class="btn primaryBtn">Formulário de Inscrição</button>
+	
+	<button onclick="window.dialogTer.close();" aria-label="close" class="x">❌</button>
+</dialog>
+
+<dialog id="dialogQuar">
+	<h2 class="carouselTitle">Quarta-feira - 16/10/2024</h2>
+	<p class="carouselPara">
+	  <h3> nome</h3>
+      Exposição de projetos criados pelos alunos em sala de aula, duas salas terão vários projetos para mostrar cada um vai falar sobre o mesmo, explicando na teoria mostrando na prática seu funcionamento uma verdadeira experiência completa da área!
+	</p>
+	<br>
+	<p class="carouselPara"><b>Local</b>: Auditório do SENAC</p>
+	<p class="carouselPara"><b>Período</b>: Noturno</p>
+		<p class="carouselPara"><b>Horário</b>: Início as 00:00</p>
+	
+	<button onclick="window.dialogQuar.close();" aria-label="close" class="x">❌</button>
+</dialog>
+
+<dialog id="dialogQui">
+	<h2 class="carouselTitle">Quinta-feira - 17/10/2024</h2>
+		<p class="carouselPara">
+	  <h3>Competições de Jogos</h3>
+      O dia será voltado para jogos possuindo jogo digital e jogos de tabuleiros para abranger todos os públicos, não se preocupe será ensinado a jogar o Gartic Phone antes de começar o jogo é bem simples e lúdico vamos tirar todas as dúvidas.
+	</p>
+	<br>
+	<h4>Lista de Jogos</h4>
+	<ul>
+	  <li>Gartic Phone - Virtual</li>
+	  <li>Xadrez</li>
+	  <li>Jenga</li>
+	  <li>Pebolim de Mesa</li>
+	</ul>
+	<br>
+	<p class="carouselPara"><b>Local</b>: Auditório do SENAC</p>
+	<p class="carouselPara"><b>Período</b>: Matutino</p>
+		<p class="carouselPara"><b>Horário</b>: Início as 00:00</p>
+		<br>
+		<ul>
+		  <li><b>Exigencia</b>:Inscrição para Participar</li>
+		</ul>
+		<br>
+		<button class="btn primaryBtn">Formulário de Inscrição</button>
+	
+	<button onclick="window.dialogQui.close();" aria-label="close" class="x">❌</button>
+</dialog>
+
+<dialog id="dialogSex">
+
+	<h2 class="carouselTitle">Sexta-feira - 18/10/2024</h2>
+		<h3> Abertura do evento</h3>
+		<p class="carouselPara">
+      Nesse dia será feito uma abertura inicial do evento sobre IA depois começa a demonstração de várias tecnologias no final terá a votação para mostrar o melhor trabalho em grupo.
+	</p>
+	<br>
+	<p class="carouselPara"><b>Local</b>: Definir</p>
+	<p class="carouselPara"><b>Período</b>: Matutino</p>
+		<p class="carouselPara"><b>Horário</b>: Início as 00:00</p>
+	
+	<button onclick="window.dialogSex.close();" aria-label="close" class="x">❌</button>
+</dialog>
+
+</div>
+    <script src="./script.js"></script>
+</body>
+</html>

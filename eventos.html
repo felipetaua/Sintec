@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SINTEC - Semana da Informática</title>
+<link rel="stylesheet" href="./commonStyle.css">
+    <link rel="stylesheet" href="./ModalEventos.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./cardEventos.css">
+    <script defer src="https://kit.fontawesome.com/aa7454d09f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div id="logo">
+            <a href="./index.html">
+            <img src="./img/logo-SINTEC.png" alt="" height="80px">
+            </a>
+        </div>
+        <ul class="nav" id="nav">
+            <ul class="navLogo">
+                <a href="./index.html">
+                     <img src="./img/logo-SINTEC.png" alt="" height="130px">
+               </a>
+            </ul>
+
+            <li class="nav-link"><a href="./index.html">Home</a></li>
+            <li class="nav-link"><a href="./eventos.html">Eventos</a></li>
+            <li class="nav-link"><a href="./aboutus.html">Conheça</a></li>
+            <li class="nav-link"><a href="./contact.html">Forms</a></li>
+            <li class="sociallinkContainer">
+                <img class="sociallink" src="./img/fabook-icon-white.svg" alt="">
+                <img class="sociallink" src="./img/inkedin-icon-white.svg" alt="">
+                <img class="sociallink" src="./img/whatsapp-icon-white.svg" alt="">
+            </li>
+        </ul>
+        <div id="barContainer">
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero gridSection">
+        <div class="headline">
+            <h2>Bem-vindo à <span class="cryptoText">SINTEC!</span></h2>
+            <p>Uma semana repleta de eventos, palestras, workshops e oportunidades para os amantes da tecnologia.</p>
+            <div class="btnContainer">
+                <button>Saiba Mais <i class="fas fa-play"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Eventos da Semana -->
+    <section id="eventos" class="eventsSection">
+        <div class="headline">
+            <h2>Eventos da Semana da Informática</h2>
+            <p>Confira os principais eventos que acontecerão durante a SINTEC:</p>
+        </div>
+        <div class="eventsContainer">
+            <!-- Card 1: Segunda-feira -->
+            <div class="eachEvent card">
+                <h3>Segunda-feira: Palestra de Abertura</h3>
+                <p><b>Data:</b> 25 de Setembro</p>
+                <p><b>Descrição:</b> A abertura da SINTEC com uma palestra especial sobre o impacto da tecnologia na sociedade moderna.</p>
+                <p><b>Horário:</b> 10:00 - 12:00</p>
+                <p><b>Local:</b> Auditório Principal</p>
+            </div>
+
+            <!-- Card 2: Terça-feira -->
+            <div class="eachEvent card">
+                <h3>Terça-feira: Workshop de Desenvolvimento Web</h3>
+                <p><b>Data:</b> 26 de Setembro</p>
+                <p><b>Descrição:</b> Um workshop prático sobre as melhores práticas de desenvolvimento de sites e aplicações web.</p>
+                <p><b>Horário:</b> 14:00 - 17:00</p>
+                <p><b>Local:</b> Laboratório 1</p>
+            </div>
+
+            <!-- Card 3: Quarta-feira -->
+            <div class="eachEvent card">
+                <h3>Quarta-feira: Mesa Redonda sobre Segurança da Informação</h3>
+                <p><b>Data:</b> 27 de Setembro</p>
+                <p><b>Descrição:</b> Especialistas discutem as principais ameaças e soluções em segurança digital.</p>
+                <p><b>Horário:</b> 10:00 - 12:00</p>
+                <p><b>Local:</b> Sala de Conferências</p>
+            </div>
+
+            <!-- Card 4: Quinta-feira -->
+            <div class="eachEvent card">
+                <h3>Quinta-feira: Hackathon de Soluções Sustentáveis</h3>
+                <p><b>Data:</b> 28 de Setembro</p>
+                <p><b>Descrição:</b> Equipes competem para desenvolver tecnologias que promovam a sustentabilidade ambiental.</p>
+                <p><b>Horário:</b> 09:00 - 18:00</p>
+                <p><b>Local:</b> Sala de Eventos</p>
+            </div>
+
+            <!-- Card 5: Sexta-feira -->
+            <div class="eachEvent card">
+                <h3>Sexta-feira: Encerramento e Premiações</h3>
+                <p><b>Data:</b> 29 de Setembro</p>
+                <p><b>Descrição:</b> Encerramento da SINTEC com premiações e uma retrospectiva dos melhores momentos da semana.</p>
+                <p><b>Horário:</b> 16:00 - 18:00</p>
+                <p><b>Local:</b> Auditório Principal</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre a SINTEC -->
+    <section id="sobre" class="aboutSection">
+        <div class="aboutusDesc">
+            <h2>Sobre a SINTEC</h2>
+            <p>A Semana da Informática, também conhecida como SINTEC, é um evento anual organizado pela comunidade acadêmica e profissionais de TI, com o objetivo de promover conhecimento, networking e inovações no campo da tecnologia.</p>
+            <p>É uma excelente oportunidade para estudantes e profissionais se conectarem e explorarem as últimas tendências tecnológicas.</p>
+        </div>
+    </section>
+
+    <!-- Formulário de Contato -->
+    <section id="contato" class="contactSection">
+        <h2>Contato</h2>
+        <form class="contactForm">
+            <div>
+                <input class="contactInput" type="text" placeholder="Nome">
+                <input class="contactInput" type="email" placeholder="Email">
+            </div>
+            <textarea class="contactInput" rows="5" placeholder="Mensagem"></textarea>
+            <button class="contactBtn" type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footerlinksContainer">
+            <div class="footerAboutus">
+                <h3 class="linkTitle">Sobre nós</h3>
+                <p>A SINTEC é organizada pelo alunos e instrutores do Técnico de Informática para Internet que desejam compartilhar seu conhecimento e paixão pelo mundo digital.</p>
+            </div>
+            <div class="footerlink">
+                <h3 class="linkTitle">Navegação</h3>
+                <a href="./index.html">Início</a>
+                <a href="./eventos.html">Eventos</a>
+                <a href="./aboutus.html">Sobre</a>
+                <a href="./contact.html">Contato</a>
+            </div>
+        </div>
+        <div class="footerCopyright">
+            <p>&copy; 2024 SINTEC. Todos os direitos reservados. Criado por felipetauaSystems</p>
+        </div>
+    </footer>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
