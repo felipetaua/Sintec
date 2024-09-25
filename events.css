@@ -1,0 +1,48 @@
+.events-card {
+    background-color: white;
+    border-radius: 18px;
+    padding: 30px 60px 30px 60px;
+    margin-top: 40px;
+    margin: 30px;
+}
+
+.events-card h3 {
+    color: black;
+    padding-bottom: 15px;
+}
+
+.events-card p {
+    color: black;
+}
+
+@media screen and (min-width:800px) {
+    .events-card {
+        background-color: white;
+        border-radius: 18px;
+        padding: 30px 120px 30px 120px;
+        margin-top: 40px;
+        margin: 30px;
+    }  
+    
+    .events-card h3 {
+        color: black;
+        font-size: 2rem;
+        padding-bottom: 40px;
+    }
+
+    .SectionQuestion {
+        font-size: 2rem;
+    }
+}
+
+.SectionQuestion {
+    padding: 15px 40px 15px 40px;
+}
+
+.SectionQuestion h2 {
+    margin-bottom: 10px;
+}
+
+.SectionQuestion p {
+    margin-bottom: 10px;
+}
