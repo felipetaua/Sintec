@@ -12,17 +12,44 @@
   >
 <button class="primary" onclick="window.dialog.showModal();">Open Dialog</button>
 
-      <div class="sectionModal">
-      <dialog id="dialog">
+<div class="sectionModal">
+  <dialog id="dialog">
+    <h2 id="cardTitle">Card 1</h2>
+    <p id="cardContent" class="carouselPara">
+      Conteúdo do Card 1. Aqui você pode colocar o conteúdo do primeiro card.
+    </p>
+    <button onclick="previousCard();" aria-label="previous" class="prev">⬅️ Anterior</button>
+    <button onclick="nextCard();" aria-label="next" class="next">➡️ Próximo</button>
+    <button onclick="window.dialog.close();" aria-label="close" class="x">❌ Fechar</button>
+  </dialog>
+</div>
 
-        	<h2>Hello.</h2>
-        	<p class="carouselPara">A CSS-only modal based on the <a href="https://developer.mozilla.org/es/docs/Web/CSS/::backdrop" target="_blank">::backdrop</a> pseudo-class. Hope you find it helpful.
-        	</p>
-        	<p class="carouselPara">You can also change the styles of the <code>::backdrop</code> from the CSS.
-        	</p>
-        	<button onclick="window.dialog.close();" aria-label="close" class="x">❌</button>
-      </dialog>
-    </div>
+<script>
+  const cards = [
+    { title: 'Card 1', content: 'Conteúdo do Card 1. Aqui você pode colocar o conteúdo do primeiro card.' },
+    { title: 'Card 2', content: 'Conteúdo do Card 2. Aqui você pode colocar o conteúdo do segundo card.' },
+    { title: 'Card 3', content: 'Conteúdo do Card 3. Aqui você pode colocar o conteúdo do terceiro card.' }
+  ];
+
+  let currentCardIndex = 0;
+
+  function updateCard() {
+    document.getElementById('cardTitle').innerText = cards[currentCardIndex].title;
+    document.getElementById('cardContent').innerText = cards[currentCardIndex].content;
+  }
+
+  function nextCard() {
+    currentCardIndex = (currentCardIndex + 1) % cards.length;
+    updateCard();
+  }
+
+  function previousCard() {
+    currentCardIndex = (currentCardIndex - 1 + cards.length) % cards.length;
+    updateCard();
+  }
+</script>
+
+
         <div class="footerCopyright">
              <p>&copy; 2024 desenvolvido por <a href="#" class="developedBy">felipetauaSystems</a>.</p>
         </div>
