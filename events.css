@@ -38,7 +38,21 @@
 
 @media screen and (max-width:500px) {
     .events-card {
-        margin: 0;
+        margin: 15px 10px 20px 10px;
+    }
+
+    .SectionQuestion {
+        padding: 10px 20px 10px 20px;
+    }
+
+
+    .events-card p {
+        font-size: 1rem;
+    }
+    
+    .events-card ul li {
+        color: #000;
+        font-size: 1rem;
     }
 }
 
@@ -65,11 +79,11 @@
 }
 
 .events-card h3 {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
 }
 
 .events-card ul li {
-    color: var(--white);
+    color: #000;
     font-size: 1.5rem;
 }
 

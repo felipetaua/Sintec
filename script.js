@@ -63,6 +63,6 @@ const scrollReveal = ScrollReveal({
  reset: true,
 });
 
-ScrollReveal().reveal('.events-card', { delay: 100 });
+ScrollReveal().reveal('.events-card', { delay: 500 });
 ScrollReveal().reveal('.eachEvent', { delay: 500 });
-ScrollReveal().reveal('.sectionPic', { delay: 1000 });
+ScrollReveal().reveal('.sectionPic', { delay: 600 });
