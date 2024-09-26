@@ -54,3 +54,13 @@ slideCarousel(currentSlide);
 
 // Inicia a troca automática dos slides
 startAutoSlide();
+
+// SCROLL REVEL 
+const scrollReveal = ScrollReveal({
+ origin: 'top',
+ distance: '30px',
+ duration: 700,
+ reset: false,
+})
+
+ScrollReveal.reveal('.events-card')
