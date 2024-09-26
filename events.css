@@ -35,6 +35,13 @@
     }
 }
 
+
+@media screen and (max-width:500px) {
+    .events-card {
+        margin: 0;
+    }
+}
+
 .SectionQuestion {
     padding: 15px 40px 15px 40px;
 }
@@ -46,3 +53,23 @@
 .SectionQuestion p {
     margin-bottom: 10px;
 }
+
+.EventosSectionImg {
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+}
+
+.events-card p {
+    font-size: 1.5rem;
+}
+
+.events-card h3 {
+    font-size: 1.9rem;
+}
+
+.events-card ul li {
+    color: var(--white);
+    font-size: 1.5rem;
+}
+

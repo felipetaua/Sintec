@@ -46,7 +46,7 @@ const startAutoSlide = () => {
         // Atualiza para o próximo slide
         const nextSlide = (currentSlide + 1) % totalSlides; // Reinicia no primeiro slide após o último
         slideCarousel(nextSlide);
-    }, 3000); // Troca de slide a cada 3 segundos
+    }, 4000); // Troca de slide a cada 4 segundos
 }
 
 // Inicializa o primeiro slide
@@ -60,7 +60,9 @@ const scrollReveal = ScrollReveal({
  origin: 'top',
  distance: '30px',
  duration: 700,
- reset: false,
-})
+ reset: true,
+});
 
-ScrollReveal.reveal('.events-card')
+ScrollReveal().reveal('.events-card', { delay: 100 });
+ScrollReveal().reveal('.eachEvent', { delay: 500 });
+ScrollReveal().reveal('.sectionPic', { delay: 1000 });
