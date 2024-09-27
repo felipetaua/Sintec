@@ -87,9 +87,13 @@ p{
     margin-bottom: 3em;
 }
 
+.formsIframe {
+    margin: auto;
+}
+
 .iframe {
     width: 100%; 
-    height: 50px;
+    height: 500px;
 }
 
 
@@ -102,13 +106,16 @@ p{
     .gridSection{
         grid-template-columns: 1fr 1fr;
     }
-    iframe {
-        height: 720px;
-    }
+
 }
 
 @media screen and (min-width:1000px){
     .sectionHeader{
         font-size: 3em;
+    }
+
+    iframe {
+        width: 100%;
+        height: 720px;
     }
 }
