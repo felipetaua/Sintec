@@ -15,6 +15,7 @@
    --secondarycolor:#5670ef;
    --lightDark:#080A25;
    --darkText:#8388B4;
+   --primarybtn:#F7941D;
 }
 
 body{
@@ -464,7 +465,7 @@ header{
 }
 
 .newsletter button{
-    background-color: var(--primarycolor);
+    background-color: var(--primarybtn);
     font-weight: 700;
 }
 
