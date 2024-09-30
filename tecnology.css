@@ -1,0 +1,54 @@
+.tech-section {
+width: 90%;
+max-width: 1100px;
+margin: auto;
+padding: 2em 0;
+}
+
+.btn{
+    border: 1px solid #fff;
+    border-radius: 50px;
+    background-color: transparent;
+    color: var(--white);
+    font-size: 1.1rem;
+    padding: .7em 1.5em;
+    cursor: pointer;
+}
+
+.tech-section h1 {
+text-align: center;
+font-size: 2rem;
+margin-bottom: 2em;
+color: var(--white);
+}
+
+.tech-list {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 2em;
+}
+
+.tech-item {
+background-color: var(--lightDark);
+border-radius: 10px;
+padding: 1.5em;
+width: 200px;
+text-align: center;
+}
+
+.tech-item i {
+font-size: 3rem;
+margin-bottom: 1rem;
+color: var(--primarycolor);
+}
+
+.tech-item h2 {
+font-size: 1.2rem;
+color: var(--white);
+}
+
+.tech-item p {
+font-size: 1rem;
+color: var(--darkText);
+}

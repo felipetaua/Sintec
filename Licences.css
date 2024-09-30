@@ -1,0 +1,95 @@
+body {
+margin: 10px;
+}
+
+.license-section {
+align-items: center;
+}
+
+header ul li a {
+list-style: none;
+text-decoration: none;
+}
+
+footer a {
+text-decoration: none;
+}
+.license-container {
+max-width: 800px;
+padding: 2rem;
+background-color: var(--darkblue);
+border-radius: 10px;
+text-align: center;
+}
+
+.license-container h1 {
+font-size: 3rem;
+margin-bottom: 1.5rem;
+color: var(--primarycolor);
+}
+
+.license-container p {
+font-size: 1.2rem;
+margin-bottom: 1.5rem;
+}
+
+.license-section h2 {
+font-size: 2rem;
+margin-bottom: 0.5rem;
+color: var(--lightPrimarycolor);
+}
+
+.license-section p {
+margin-bottom: 1rem;
+}
+
+.license-footer {
+margin-top: 2rem;
+}
+
+.license-footer p {
+font-size: 1rem;
+color: var(--lightPrimarycolor);
+}
+
+a {
+color: var(--primarycolor);
+text-decoration: underline;
+}
+
+a:hover {
+color: var(--lightPrimarycolor);
+}
+
+/* Estilo do card */
+.card {
+
+border-radius: 10px;
+padding: 1.5rem;
+margin-top: 2rem;
+background-color: var(--darkblue);
+}
+
+.card img {
+width: 150px;
+height: auto;
+border-radius: 5px;
+margin-top: 1rem;
+}
+
+/* Para garantir o alinhamento central no desktop */
+@media(min-width: 768px) {
+.license-container {
+padding: 20px;
+margin: auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.gridSection {
+padding: 180px;
+}
+}
