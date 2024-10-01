@@ -17,10 +17,10 @@ dialog {
   border: 0;
   box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
   -webkit-animation: fadeIn 1s ease both;
-          animation: fadeIn 1s ease both;
+  animation: fadeIn 1s ease both;
 }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width: 800px) {
   dialog {
     position: fixed;
     left: 50%;
@@ -31,19 +31,19 @@ dialog {
 
 dialog::-webkit-backdrop {
   -webkit-animation: fadeIn 1s ease both;
-          animation: fadeIn 1s ease both;
+  animation: fadeIn 1s ease both;
   background: rgba(255, 255, 255, 0.4);
   z-index: 2;
   -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 dialog::backdrop {
   -webkit-animation: fadeIn 1s ease both;
-          animation: fadeIn 1s ease both;
+  animation: fadeIn 1s ease both;
   background: rgba(255, 255, 255, 0.4);
   z-index: 2;
   -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 dialog .x {
   padding-left: 100pxn;
@@ -65,8 +65,6 @@ dialog .x:hover {
 dialog p a:visited {
   color: rgb(var(--vs-primary));
 }
-
-
 
 @-webkit-keyframes fadeIn {
   from {

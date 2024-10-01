@@ -1,100 +1,96 @@
 .events-card {
-background-color: white;
-border-radius: 18px;
-padding: 30px 60px 30px 60px;
-margin-top: 40px;
-margin: 30px;
+  background-color: white;
+  border-radius: 18px;
+  padding: 30px 60px 30px 60px;
+  margin-top: 40px;
+  margin: 30px;
 }
 
 .events-card h3 {
-color: black;
-padding-bottom: 15px;
+  color: black;
+  padding-bottom: 15px;
 }
 
 .events-card p {
-color: black;
+  color: black;
 }
 
-@media screen and (min-width:800px) {
-.events-card {
-background-color: white;
-border-radius: 18px;
-padding: 30px 120px 30px 120px;
-margin-top: 40px;
-margin: 30px;
+@media screen and (min-width: 800px) {
+  .events-card {
+    background-color: white;
+    border-radius: 18px;
+    padding: 30px 120px 30px 120px;
+    margin-top: 40px;
+    margin: 30px;
+  }
+
+  .events-card h3 {
+    color: black;
+    font-size: 2rem;
+    padding-bottom: 40px;
+  }
+
+  .SectionQuestion {
+    font-size: 2rem;
+  }
 }
 
-.events-card h3 {
-color: black;
-font-size: 2rem;
-padding-bottom: 40px;
-}
+@media screen and (max-width: 500px) {
+  .events-card {
+    margin: 15px 10px 20px 10px;
+  }
 
-.SectionQuestion {
-font-size: 2rem;
+  .SectionQuestion {
+    padding: 10px 20px 10px 20px;
+  }
 
-}
-}
+  .events-card p {
+    font-size: 1rem;
+  }
 
-
-
-@media screen and (max-width:500px) {
-.events-card {
-margin: 15px 10px 20px 10px;
-}
-
-.SectionQuestion {
-padding: 10px 20px 10px 20px;
-}
-
-
-.events-card p {
-font-size: 1rem;
-}
-
-.events-card ul li {
-color: #000;
-font-size: 1rem;
-}
+  .events-card ul li {
+    color: #000;
+    font-size: 1rem;
+  }
 }
 
 .SectionQuestion {
-padding: 15px 40px 15px 40px;
+  padding: 15px 40px 15px 40px;
 }
 
 .SectionQuestion h2 {
-margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .SectionQuestion p {
-margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .EventosSectionImg {
-width: 150px;
-height: 150px;
-border-radius: 30px;
+  width: 150px;
+  height: 150px;
+  border-radius: 30px;
 }
 
 .events-card p {
-font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .events-card h3 {
-font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 
 .events-card ul li {
-color: #000;
-font-size: 1.5rem;
+  color: #000;
+  font-size: 1.5rem;
 }
 
-@media screen and (min-width:1000px) {
+@media screen and (min-width: 1000px) {
   .events-card p {
-font-size: 1.2rem;
-}
+    font-size: 1.2rem;
+  }
 
-.events-card h3 {
-font-size: 1.5rem;
-}
+  .events-card h3 {
+    font-size: 1.5rem;
+  }
 }
