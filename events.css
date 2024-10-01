@@ -15,6 +15,14 @@
   color: black;
 }
 
+.events-alert {
+
+}
+
+.texto-alerta {
+  color: rgb(226, 59, 59) !important; 
+}
+
 @media screen and (min-width: 800px) {
   .events-card {
     background-color: white;
@@ -27,12 +35,14 @@
   .events-card h3 {
     color: black;
     font-size: 2rem;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
 
   .SectionQuestion {
     font-size: 2rem;
   }
+
+
 }
 
 @media screen and (max-width: 500px) {
@@ -52,6 +62,7 @@
     color: #000;
     font-size: 1rem;
   }
+
 }
 
 .SectionQuestion {
