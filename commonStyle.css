@@ -66,6 +66,16 @@ p {
   background-color: var(--primarycolor);
 }
 
+.conhecaImg {
+  width: 346px;
+  height: 279px;
+}
+
+.conhecaHorizontalImg {
+  height: 346px;
+  width: 279px;
+}
+
 @keyframes bounce {
   0% {
     transform: translateY(-30px);
