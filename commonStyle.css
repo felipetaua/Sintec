@@ -67,8 +67,10 @@ p {
 }
 
 .conhecaImg {
-  width: 346px;
-  height: 279px;
+  width: 340px;
+  height: 270px;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .conhecaHorizontalImg {
