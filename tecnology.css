@@ -1,3 +1,16 @@
+:root {
+    --black: #000;
+    --white: #ffffff;
+    --lightgrey: #f1f1f1;
+    --darkblue: #0d102c;
+    --primarycolor: #3d51f2;
+    --secondarycolor: #5670ef;
+    --lightDark: #080a25;
+    --darkText: #8388b4;
+    --primary: #f7941d;
+}
+
+
 .tech-section {
   width: 90%;
   max-width: 1100px;
@@ -8,7 +21,7 @@
 .btn {
   border: 1px solid #fff;
   border-radius: 50px;
-  background-color: transparent;
+  background-color: var(--primarycolor);
   color: var(--white);
   font-size: 1.1rem;
   padding: 0.7em 1.5em;
@@ -51,4 +64,8 @@
 .tech-item p {
   font-size: 1rem;
   color: var(--darkText);
+}
+
+.avaliaBtn button {
+    color: var(--black);
 }
