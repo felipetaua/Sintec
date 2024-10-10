@@ -107,6 +107,7 @@ p {
 
 .formsIframe {
   margin: auto;
+  margin-bottom: 60px;
 }
 
 .iframe {
@@ -134,8 +135,6 @@ p {
     justify-self: start;
   }
 }
-
-
 
 @media screen and (min-width: 1000px) {
   .sectionHeader {
