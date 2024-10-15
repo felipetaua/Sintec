@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sintec - Inscrição</title>
     <link rel="stylesheet" href="./commonStyle.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 
+    <link rel="stylesheet" href="./ModalEventos.css">
     <script src="https://kit.fontawesome.com/aa7454d09f.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./img/logo-mini.ico" type="image/x-icon">
 </head>
@@ -68,7 +69,7 @@
                 Leia as regras no botão abaixo, terá todas as informações que você precisa:
             </p>
             <div class="regulamentoBtn">
-                <a href=""><button class="btn carouselBtn" >Regulamento</button></a>
+              <button class="btn carouselBtn" onclick="window.dialogMar.showModal();">Regulamento</button>
             </div>
             
             <!-- segundo regulamento -->
@@ -84,7 +85,7 @@
                 <span class="cinzaText"> Leia as regras no botão abaixo, terá todas as informações que você precisa:</span>
             </p>
             <div class="regulamentoBtn">
-                <a href=""><button class="btn carouselBtn" >Regulamento</button></a>
+                <button class="btn carouselBtn" onclick="window.dialogGame.showModal();">Regulamento</button>
             </div>
             
     </section>
@@ -155,6 +156,40 @@
              https://github.com/felipetaua" class="developedBy" target="_blank">felipetauaSystems</a>.</p>
         </div>
     </footer>
+    
+    <div class="modal">
+      <!-- Modal dias da semana seg a sexta  dialogGame-->
+    <div class="modal"> 
+        <dialog id="dialogMar">
+            <h2 class="carouselTitle">Maratona - 14/10/2024</h2>
+            <p class="carouselPara">
+            <h3> Abertura do evento</h3>
+            Convidados da área da tecnologia farão um bate-papo com alunos esclarecendo dúvidas mostrando como é o mercado, que erros não cometer é importante guardar as perguntas para se fazer!
+            </p>
+            <br>
+            <p class="carouselPara"><b><i class="fa-solid fa-location-dot"></i> Local</b>: Auditório do SENAC</p>
+            <p class="carouselPara"><b><i class="fa-solid fa-moon"></i> Período</b>: Noturno</p>
+            <p class="carouselPara"><b><i class="fa-solid fa-clock"></i> Horário</b>: Início as 00:00</p>
+            
+            <button onclick="window.dialogMar.close();" aria-label="close" class="x">❌</button>
+        </dialog>
+        
+        <dialog id="dialogGame">
+            <h2 class="carouselTitle">Campeonato de Jogos - 14/10/2024</h2>
+            <p class="carouselPara">
+            <h3> Abertura do evento</h3>
+            Convidados da área da tecnologia farão um bate-papo com alunos esclarecendo dúvidas mostrando como é o mercado, que erros não cometer é importante guardar as perguntas para se fazer!
+            </p>
+            <br>
+            <p class="carouselPara"><b><i class="fa-solid fa-location-dot"></i> Local</b>: Auditório do SENAC</p>
+            <p class="carouselPara"><b><i class="fa-solid fa-moon"></i> Período</b>: Noturno</p>
+            <p class="carouselPara"><b><i class="fa-solid fa-clock"></i> Horário</b>: Início as 00:00</p>
+            
+            <button onclick="window.dialogGame.close();" aria-label="close" class="x">❌</button>
+        </dialog>
+      
+    </div>
+    
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./script.js"></script>    
 </body>

@@ -870,3 +870,7 @@ footer {
     font-size: 3.5rem;
   }
 }
+
+.imagesBlock {
+  pointer-events: none;
+}
