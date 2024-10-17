@@ -6,9 +6,9 @@
     <title>Sintec - Inscrição</title>
     <link rel="stylesheet" href="./commonStyle.css">
     <link rel="stylesheet" href="./style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./ModalEventos.css">
-    <script src="https://kit.fontawesome.com/aa7454d09f.js" crossorigin="anonymous"></script>
+    <script defer src="https://kit.fontawesome.com/aa7454d09f.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./img/logo-mini.ico" type="image/x-icon">
 </head>
 <body>
@@ -60,8 +60,8 @@
         <div class="sectionDesc processessDesc"></div>
             <h2 class="">Inscrições da Maratona</h2>
             <div class="formsIframe">
-                <iframe src="https://forms.office.com/r/v1cM19ai2E?origin=QRCode" frameborder="0" class="form-inscricao"></iframe>
-                <p>Esse formulário é apenas para terça-feira, preencha com atenção abaixo o regulamento.</p>
+                <iframe class="form-inscricao" width="640px" height="480px" src="https://forms.office.com/r/v1cM19ai2E?embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+                <p>Esse formulário é apenas para terça-feira, preencha com atenção, abaixo o regulamento.</p>
             </div>
 
             <h2>Regulamento da Maratona</h2>
@@ -76,8 +76,8 @@
 
             <h2>Inscrição do Campeonato de Jogos</h2>
             <div class="formsIframe">
-                <iframe src="https://forms.office.com/Pages/ResponsePage.aspx?id=TXb95_9G7kGMjOQeiklo7cdyatR6DidBrhoZex16cdNURjJUUlJISkJXRFI1SUJDUEZaQTFSWVRKVy4u&origin=QRCode" frameborder="0" class="form-inscricao" ></iframe>
-                <p>Esse formulário é apenas para quinta-feira, preencha com atenção abaixo o regulamento.</p>
+                <iframe src="https://forms.office.com/Pages/ResponsePage.aspx?id=TXb95_9G7kGMjOQeiklo7cdyatR6DidBrhoZex16cdNURjJUUlJISkJXRFI1SUJDUEZaQTFSWVRKVy4u&origin=QRCode" frameborder="0" class="form-inscricao" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen ></iframe>
+                <p>Esse formulário é apenas para quinta-feira, preencha com atenção, abaixo o regulamento.</p>
             </div>
 
             <h2>Regulamento do Campeonato de Jogos</h2>
@@ -161,21 +161,79 @@
       <!-- Modal dias da semana seg a sexta  dialogGame-->
     <div class="modal"> 
         <dialog id="dialogMar">
-            <h2 class="carouselTitle">Maratona - 14/10/2024</h2>
+            <h2 class="carouselTitle">Maratona - 19/11/2024</h2>
+            <h3> 1. Objetivo</h3>
             <p class="carouselPara">
-            <h3> Abertura do evento</h3>
-            Convidados da área da tecnologia farão um bate-papo com alunos esclarecendo dúvidas mostrando como é o mercado, que erros não cometer é importante guardar as perguntas para se fazer!
+                A Maratona de Jogos "Passa ou Repassa" tem como objetivo promover a integração e o entretenimento entre os participantes, além de estimular o raciocínio rápido, trabalho em equipe e espírito esportivo.
             </p>
             <br>
-            <p class="carouselPara"><b><i class="fa-solid fa-location-dot"></i> Local</b>: Auditório do SENAC</p>
-            <p class="carouselPara"><b><i class="fa-solid fa-moon"></i> Período</b>: Noturno</p>
-            <p class="carouselPara"><b><i class="fa-solid fa-clock"></i> Horário</b>: Início as 00:00</p>
+            <a class="btn carouselBtn" href="./archive/Regulamento-Maratona.pdf" download="Regulamento-Maratona.pdf" target="_blank">Baixe o Regulamento</a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h3>2. Inscrição</h3>
+            <p class="carouselPara">
+                As inscrições serão realizadas previamente, conforme o período e formas divulgadas pela organização.
+                Cada equipe deverá ser composta por 4 participantes, com idade mínima de 14 anos.
+                As vagas são limitadas e o preenchimento ocorrerá por ordem de inscrição.
+            </p>
+            <h3>3. Formato do Jogo</h3>
+            <p class="carouselPara">
+                A maratona será disputada em formato de eliminação simples, ou seja, quem perder a rodada é eliminado.
+                O jogo segue o formato tradicional do "Passa ou Repassa", onde perguntas são feitas às equipes, e estas devem responder ou passar a pergunta para o time adversário.
+                Caso a equipe não saiba a resposta, poderá optar por “Repassar” para a equipe adversária, que deverá responder. Se o adversário também não souber, a pergunta volta para a equipe original, que será obrigada a responder.
+                Se a equipe errar a resposta na fase de repasse, perde pontos.
+            </p>
+            <h3>4. Pontuação</h3>
+            <p class="carouselPara">
+                <ul>
+                    <li>Cada pergunta correta vale 10 pontos.</li>
+                    <li>Se a equipe repassar e o adversário errar, a equipe que repassou ganha 5 pontos.</li>
+                    <li>Se a equipe for obrigada a responder na última rodada de repasse e errar, perde 5 pontos.</li>
+                    <li>Ao final de cada rodada, a equipe com mais pontos avança para a próxima fase.</li>
+                    <br>
+                </ul>    
+                <br>
+            </p>
+            <h3>5. Rodadas Especiais</h3>
+            <p class="carouselPara">
+                Rodada de Desafio Físico: Algumas rodadas incluirão desafios físicos, como provas de habilidade ou resistência, onde a equipe que completar o desafio corretamente ou no menor tempo ganhará 20 pontos adicionais.
+                Rodada Relâmpago: Perguntas feitas em sequência rápida. A equipe terá 30 segundos para responder o maior número de perguntas possível, e cada resposta correta valerá 15 pontos.
+            </p>
+            <h3>6. Desempate</h3>
+            <p class="carouselPara">
+                Em caso de empate na pontuação ao final de uma rodada, será feita uma pergunta de desempate, em que a equipe que responder corretamente primeiro avançará para a próxima fase.
+            </p>
+            <h3>7. Regras Gerais</h3>
+            <p class="carouselPara">
+                O tempo para responder a cada pergunta será de 15 segundos.
+                Não serão permitidos equipamentos eletrônicos, anotações ou consultas durante o jogo.
+                A equipe que desrespeitar as regras ou exibir comportamento antidesportivo será automaticamente desclassificada.
+            </p>
+            <h3>8. Premiação</h3>
+            <p class="carouselPara">
+                As equipes que alcançarem as primeiras colocações receberão prêmios conforme a colocação final:
+                <br><b> 1º lugar:</b> Troféu + prêmio em dinheiro ou voucher.
+                <br><b>2º lugar:</b> Medalhas + brindes.
+                <br><b>3º lugar:</b> Medalhas + brindes.
+            </p>
+            <h3>9. Organização</h3>
+            <p class="carouselPara">
+                A organização da Maratona de Jogos "Passa ou Repassa" é responsável pela arbitragem, escolha das perguntas, desafios físicos e pela segurança do evento.
+                As decisões da arbitragem são finais e não cabem recursos.
+            </p>
+            <h3>10. Disposições Gerais</h3>
+            <p class="carouselPara">
+                Ao se inscrever na maratona, os participantes concordam com o regulamento e cedem à organização o direito de uso de imagem para fins de divulgação do evento.
+                A organização reserva-se o direito de modificar o regulamento em situações excepcionais, visando o melhor andamento da competição
+            </p>
             
             <button onclick="window.dialogMar.close();" aria-label="close" class="x">❌</button>
         </dialog>
         
         <dialog id="dialogGame">
-            <h2 class="carouselTitle">Campeonato de Jogos - 14/10/2024</h2>
+            <h2 class="carouselTitle">Campeonato de Jogos - 21/10/2024</h2>
             <p class="carouselPara">
             <h3> Abertura do evento</h3>
             Convidados da área da tecnologia farão um bate-papo com alunos esclarecendo dúvidas mostrando como é o mercado, que erros não cometer é importante guardar as perguntas para se fazer!
