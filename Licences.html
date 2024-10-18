@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sintec - Licenças</title>
+    <!-- css -->
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./Licences.css">
+    <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- minhatura -->
     <link rel="shortcut icon" href="./img/logo-mini.ico" type="image/x-icon">
 </head>
 <body>
@@ -106,6 +109,10 @@
           </section>
     </section>
     
+    <!-- fazer de vlibras
+    A Suíte VLibras é um conjunto de ferramentas gratuitas e de código aberto que traduz conteúdos digitais para a Língua Brasileira de Sinais (Libras).
+    -->
+    
     <!-- Rodapé -->
     <footer>
         <div class="joinSection">
@@ -157,6 +164,16 @@
              <p>&copy; Direitos Reservados SINTEC 2024 desenvolvido por <a href="https://github.com/felipetaua" class="developedBy" target="_blank">felipetauaSystems</a>.</p>
         </div>
     </footer>
+    <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
       <script src="./script.js"></script>
 </body>
 </html>

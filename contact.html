@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sintec - Inscrição</title>
-    <link rel="stylesheet" href="./commonStyle.css">
+    <!-- css -->
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./commonStyle.css">
     <link rel="stylesheet" href="./ModalEventos.css">
-    <script defer src="https://kit.fontawesome.com/aa7454d09f.js" crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- minhatura -->
     <link rel="shortcut icon" href="./img/logo-mini.ico" type="image/x-icon">
 </head>
 <body>
@@ -76,7 +78,7 @@
 
             <h2>Inscrição do Campeonato de Jogos</h2>
             <div class="formsIframe">
-                <iframe src="https://forms.office.com/Pages/ResponsePage.aspx?id=TXb95_9G7kGMjOQeiklo7cdyatR6DidBrhoZex16cdNURjJUUlJISkJXRFI1SUJDUEZaQTFSWVRKVy4u&origin=QRCode" frameborder="0" class="form-inscricao" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen ></iframe>
+                <iframe src="https://forms.office.com/Pages/ResponsePage.aspx?id=TXb95_9G7kGMjOQeiklo7cdyatR6DidBrhoZex16cdNURjJUUlJISkJXRFI1SUJDUEZaQTFSWVRKVy4u&origin=QRCode"  width="640px" height="480px" frameborder="0" class="form-inscricao" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen ></iframe>
                 <p>Esse formulário é apenas para quinta-feira, preencha com atenção, abaixo o regulamento.</p>
             </div>
 
@@ -249,6 +251,16 @@
     </div>
     
     <script src="https://unpkg.com/scrollreveal"></script>
+    <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
     <script src="./script.js"></script>    
 </body>
 </html>
