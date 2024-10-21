@@ -16,6 +16,7 @@
   --lightDark: #080a25;
   --darkText: #8388b4;
   --primary: #f7941d;
+  --red: #e94560;
 }
 
 body {
@@ -221,10 +222,18 @@ header {
   color: var(--primarycolor);
 }
 
+.carouselDiscountRed {
+  color: var(--red) !important;
+}
+
 .rect {
   width: 10px;
   height: 10px;
   background-color: var(--lightDark);
+}
+
+.rectRed {
+  background: var(--red) !important;
 }
 
 .carousel {
@@ -261,6 +270,10 @@ header {
   font-size: 1.1rem;
   padding: 0.7em 1.5em;
   cursor: pointer;
+}
+
+.btnRed {
+  background: var(--red) !important;
 }
 
 .carouselBtn {
