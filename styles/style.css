@@ -282,6 +282,10 @@ header {
   text-transform: uppercase;
 }
 
+.primaryBtn {
+  background-color: var(--primarycolor);
+}
+
 @media screen and (min-width: 700px) {
   .carouselContainer {
     grid-auto-columns: calc(100% / 2);
