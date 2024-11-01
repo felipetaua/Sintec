@@ -78,6 +78,9 @@
 @media screen and (max-width: 450px) {
     .cards{
         padding: 0px;
-        width: 390px;
+    }
+    .card {
+        width: 356px;
+
     }
 }
