@@ -74,3 +74,9 @@
     line-height: 30px;
     font-weight: 400;
 }
+
+@media screen and (max-width: 450px) {
+    .cards{
+        padding: 0px;
+    }
+}
