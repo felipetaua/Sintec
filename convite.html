@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles/commonStyle.css">
     <link rel="stylesheet" href="./styles/ModalEventos.css">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/cardEventos.css">
+    <link rel="stylesheet" href="./styles/timer.css">
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- minhatura -->
@@ -60,7 +60,32 @@
     </section>
     <!-- content... -->
     <section>
-        <h2>convite</h2>
+        <div class="wrapper">
+            <h1 class="heading"> EM BREVE</h1>
+            <p class="description">Semana da Inovação e Técnologia do Senac, o melhor evento tech!</p>
+    
+            <div class="timer">
+                <div class="sub_timer">
+                    <h1 id="day" class="digit">00</h1>
+                    <p class="digit_name">Dias</p>
+                </div>
+                <div class="sub_timer">
+                    <h1 id="hour" class="digit">00</h1>
+                    <p class="digit_name">Horas</p>
+                </div>
+                <div class="sub_timer">
+                    <h1 id="min" class="digit">00</h1>
+                    <p class="digit_name">Min.</p>
+                </div>
+                <div class="sub_timer">
+                    <h1 id="sec" class="digit">00</h1>
+                    <p class="digit_name">Seg.</p>
+                </div>
+            </div>
+        </div>
+        <div id="popup" class="popup hidden">
+        O evento está a todo vapor!
+        </div>
     </section>
 
     <footer>
@@ -118,5 +143,6 @@
     new window.VLibras.Widget('https://vlibras.gov.br/app');
   </script>
     <script src="./script.js"></script>
+    <script src="./timer.js"></script>
 </body>
 </html>
