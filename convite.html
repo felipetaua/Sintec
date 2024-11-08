@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/commonStyle.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/timer.css">
+    <link rel="stylesheet" href="./styles/envelope.css">
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- minhatura -->
@@ -57,9 +58,30 @@
             <img  src="./img/hero-cell.png" alt="">
         </div>  
     </section>
-
+<!-- envelope  -->
     <section>
-        <h2>convite</h2>
+        <div class="container">
+            <div class="envelope-wrapper">
+                <div class="envelope">
+                    <div class="letter">
+                        <div class="text">
+                            <strong>Dear Person.</strong>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Numquam labore omnis minus maiores laboriosam, facere in beatae esse. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="heart"> <img width="30px" height="30px" pointer="" src="./img/Botao.png" alt=""> </div>
+            </div>
+        </div>
+        <script>
+            const envelope = document.querySelector('.envelope-wrapper');
+            envelope.addEventListener('click', () => {
+                envelope.classList.toggle('flap');
+            });
+        </script>
     </section>
     <!-- content... -->
     <section>
