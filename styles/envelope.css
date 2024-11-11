@@ -8,11 +8,13 @@
     --txt-color: #444;
     --heart-color: rgb(252, 8, 231);
   }
-  .container {
-    height: 100vh;
-    display: grid;
+
+  .sectionConvite {
     place-items: center;
   }
+
+
+  .container {}
   .container > .envelope-wrapper {
     background: var(--bg-envelope-color);
     box-shadow: 0 0 40px var(--shadow-color);
@@ -65,7 +67,7 @@
   }
   .heart {
     position: absolute;
-    top: 50%;
+    top: 142%;
     left: 50%;
     width: 15px;
     height: 15px;
