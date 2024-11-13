@@ -33,7 +33,7 @@
   }
   .envelope-wrapper > .envelope {
     position: relative;
-    width: 300px;
+    width: 295px;
     height: 230px;
   }
   .envelope-wrapper > .envelope::before {
