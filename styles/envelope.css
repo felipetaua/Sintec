@@ -17,6 +17,16 @@
   .conviteText {
     color: #444;
   }
+
+  .conviteAss {
+    color: #444;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .conviteImage {
+    border-radius: 14px;
+  }
   .container > .envelope-wrapper {
     background: var(--bg-envelope-color);
     box-shadow: 0 0 40px var(--shadow-color);
@@ -98,7 +108,7 @@
     z-index: 0;
   }
   .flap > .envelope > .letter {
-    bottom: 100px;
+    bottom: 200px;
     transform: scale(1.5);
     transition-delay: 1s;
   }
