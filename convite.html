@@ -10,14 +10,27 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/timer.css">
     <link rel="stylesheet" href="./styles/envelope.css">
+    <link rel="stylesheet" href="./styles/loading.css">
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./img/logo-mini.ico" type="image/x-icon">
+    <script src="./loading.js"></script>
 </head>
+<body onLoad="loading()">
+    <div class="loading">
+        <div class="box-wrap">
+            <div class="box one"></div>
+            <div class="box two"></div>
+            <div class="box three"></div>
+            <div class="box four"></div>
+            <div class="box five"></div>
+            <div class="box six"></div>
+        </div>
+    </div>
 
-<body>
+    <div class="site">
     <!-- Header -->
     <header>
         <div id="logo">
@@ -204,6 +217,7 @@
     </footer>
 
     </div>
+    </div>
     <script src="https://unpkg.com/scrollreveal"></script>
     <div vw class="enabled">
     <div vw-access-button class="active"></div>
@@ -215,6 +229,19 @@
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
+
+    <script>
+    // Função de carregamento
+    function loading() {
+      document.getElementsByClassName('loading')[0].style.display = "none";
+      document.getElementsByClassName('site')[0].style.display = "block";
+    }
+
+    // Aguarde o carregamento completo da página para ocultar a tela de carregamento
+    window.onload = function() {
+      setTimeout(loading, 2000); // 2 segundos para exibir a tela de carregamento antes de mostrar o site
+    };
+  </script>
     <script src="./timer.js"></script>
     <script src="./script.js"></script>
 </body>

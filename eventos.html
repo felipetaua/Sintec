@@ -11,12 +11,26 @@
     <link rel="stylesheet" href="./styles/cardEventos.css" /> 
     <link rel="stylesheet" href="./styles/Card.css">
     <link rel="stylesheet" href="./styles/events.css" />
+    <link rel="stylesheet" href="./styles/loading.css">
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- minhatura -->
     <link rel="shortcut icon" href="./img/logo-mini.ico" type="image/x-icon" />
+    <script src="./loading.js"></script>
   </head>
-  <body>
+  <body onLoad="loading()">
+    <div class="loading">
+      <div class="box-wrap">
+          <div class="box one"></div>
+          <div class="box two"></div>
+          <div class="box three"></div>
+          <div class="box four"></div>
+          <div class="box five"></div>
+          <div class="box six"></div>
+      </div>
+    </div>
+
+    <div class="site">
     <!-- Header -->
     <header>
       <div id="logo">
@@ -92,7 +106,7 @@
                 <br>
                 <p>Convidados da área da tecnologia farão um bate-papo com alunos esclarecendo dúvidas mostrando como é o mercado, que erros não cometer é importante guardar as perguntas para se fazer!</p>
                 <br>
-                <a href="https://forms.office.com/pages/responsepage.aspx?id=TXb95_9G7kGMjOQeiklo7emMh7eIgBxDjE6P4kjbd9xUREJNTklZS1dDWEpFQThZWEpNVUcxNlVUNC4u&route=shorturl" target="_blank" target="_blank"><button class="btn primaryBtn"> <i class="fa-solid fa-desktop"> </i> Inscrição para o Painel</button></a>
+                <a href="https://forms.office.com/pages/responsepage.aspx?id=TXb95_9G7kGMjOQeiklo7emMh7eIgBxDjE6P4kjbd9xUREJNTklZS1dDWEpFQThZWEpNVUcxNlVUNC4u&route=shorturl"  target="_blank"><button class="btn primaryBtn"> <i class="fa-solid fa-desktop"> </i> Inscrição para o Painel</button></a>
             </div>
         </div>
         <div class="card card2">
@@ -141,7 +155,7 @@
                 <a href="./contact.html#jogos"><button class="btn primaryBtn"> <i class="fa-solid fa-gamepad"> </i> Formulário de Inscrição</button></a>
                 <br>
                 <br>
-                <a href="./archive/Guia-Sintec-Oficial.docx" dowload="Guia-Sintec-Oficial.docx" target="_blank"><button class="btn " > Guia dos Jogos</button></a>
+                <a href="./archive/Guia-Sintec-Oficial.docx" dowload="regras Gartic Phone.docx" target="_blank"><button class="btn " > Guia do Gartic Phone</button></a>
             </div>
         </div>
         <div class="card card4">
@@ -240,7 +254,7 @@
         </p>
       </div>
     </footer>
-    
+  </div>
     <script src="https://unpkg.com/scrollreveal"></script>
     <div vw class="enabled">
     <div vw-access-button class="active"></div>
@@ -252,6 +266,19 @@
   <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
   </script>
+
+<script>
+  // Função de carregamento
+  function loading() {
+    document.getElementsByClassName('loading')[0].style.display = "none";
+    document.getElementsByClassName('site')[0].style.display = "block";
+  }
+
+  // Aguarde o carregamento completo da página para ocultar a tela de carregamento
+  window.onload = function() {
+    setTimeout(loading, 2000); // 2 segundos para exibir a tela de carregamento antes de mostrar o site
+  };
+</script>
     <script src="./script.js"></script>
   </body>
 </html>
