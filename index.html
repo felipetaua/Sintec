@@ -517,10 +517,8 @@
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
-    
-    <script>
-    // Função de carregamento
+        
+        // Função de carregamento
     function loading() {
       document.getElementsByClassName('loading')[0].style.display = "none";
       document.getElementsByClassName('site')[0].style.display = "block";
@@ -530,9 +528,8 @@
     window.onload = function() {
       setTimeout(loading, 2000); // 2 segundos para exibir a tela de carregamento antes de mostrar o site
     };
-  </script>
-  
-  <script defer src="./script.js">
+    </script>
+  <script src="./script.js">
     </script>
 </body>
 </html>
