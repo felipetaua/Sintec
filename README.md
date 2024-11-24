@@ -14,4 +14,4 @@ Este website foi criado para centralizar todas as informações sobre a Semana d
 
 - Informações sobre palestras, workshops e cronogramas.
 - Convite interativo para engajar os participantes.
-- Navegação intuitiva e design responsivo.
+- Navegação intuitiva e design responsivo entre outras coisas.
