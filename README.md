@@ -1,1 +1,1 @@
-
+Esse website foi criado para possuir todas as informações do Evento de Tecnologia do Senac Nova Londrina a SINTEC, o projeto é apenas front-end aproximadamente mais de 120 pessoas utilizaram o site para conseguir informações contendo mais de 200 pessoas nos 4 dias de evento.
