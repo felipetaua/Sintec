@@ -279,29 +279,29 @@
     </div>
 </div>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
-    </div>
-  </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
 
     <script>
-    // Função de carregamento
-    function loading() {
-      document.getElementsByClassName('loading')[0].style.display = "none";
-      document.getElementsByClassName('site')[0].style.display = "block";
-    }
+        // Função de carregamento
+        function loading() {
+        document.getElementsByClassName('loading')[0].style.display = "none";
+        document.getElementsByClassName('site')[0].style.display = "block";
+        }
 
-    // Aguarde o carregamento completo da página para ocultar a tela de carregamento
-    window.onload = function() {
-      setTimeout(loading, 2000); // 2 segundos para exibir a tela de carregamento antes de mostrar o site
-    };
-  </script>
-    <script  src="./script.js"></script>    
+        // Aguarde o carregamento completo da página para ocultar a tela de carregamento
+        window.onload = function() {
+        setTimeout(loading, 2000); // 2 segundos para exibir a tela de carregamento antes de mostrar o site
+        };
+    </script>
+    <script  src="./script.js"></script>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script> 
 </body>
 </html>
