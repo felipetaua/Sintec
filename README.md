@@ -2,7 +2,7 @@
 
 Este website foi criado para centralizar todas as informações sobre a Semana da Inovação e Tecnologia do Senac Nova Londrina (SINTEC). O evento foi realizado com o objetivo de apresentar inovações tecnológicas e tendências de mercado, proporcionando uma experiência interativa e informativa para os participantes:
 
-[![Live Server](https://img.shields.io/badge/Live_Server-Click_Here-brightgreen?style=for-the-badge)](https://felipetaua.github.io/Sintec/
+[![Live Server](https://img.shields.io/badge/Live_Server-Click_Here-brightgreen?style=for-the-badge)](https://felipetaua.github.io/Sintec/)
 
 ## Sobre o Projeto
 
