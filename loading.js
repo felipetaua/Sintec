@@ -9,5 +9,5 @@ function loading() {
     window.onload = () => {
       loadingElement.style.display = 'none'; // Esconde a tela de carregamento
     };
-  }
+}
   
