@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif; /* Fonte moderna */
+    font-family: 'Poppins', sans-serif;
 }
 
 .wrapper {
     text-align: center;
     width: 100%;
-    max-width: 1200px; /* Limita o tamanho em telas muito grandes */
+    max-width: 1200px;
 }
 
 .heading {
@@ -31,7 +31,7 @@
 .timer {
     display: flex;
     justify-content: space-around;
-    gap: 20px; /* Espaço entre os elementos */
+    gap: 20px; 
     flex-wrap: wrap; /* Garante que os itens fiquem na mesma linha ou quebrem para a próxima, quando necessário */
 }
 
@@ -71,7 +71,7 @@
     font-weight: 400;
 }
 
-/* Responsividade para telas menores */
+
 @media (max-width: 768px) {
     .timer {
         gap: 15px;
@@ -101,7 +101,7 @@
 
 @media (max-width: 480px) {
     .sub_timer {
-        min-width: 80px; /* Ajusta o tamanho mínimo para telas muito pequenas */
+        min-width: 80px;
         max-width: 120px;
     }
 
