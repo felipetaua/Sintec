@@ -1,13 +1,14 @@
-// Função para exibir a tela de carregamento
+// Função de carregamento
 function loading() {
-    const loadingElement = document.querySelector(".loading"); // Seleciona o elemento de carregamento
+    document.querySelector('.loading').style.display = "none"; // Oculta a tela de carregamento
+    document.querySelector('.site').style.display = "block"; // Exibe o site
+  }
   
-    // Exibe a tela de carregamento enquanto a página carrega
-    loadingElement.style.display = 'block';
-  
-    // Quando toda a página estiver carregada, a tela de carregamento será removida
-    window.onload = () => {
-      loadingElement.style.display = 'none'; // Esconde a tela de carregamento
-    };
-}
-  
+  // Aguarda o carregamento completo da página
+  window.onload = function () {
+    // Oculta a tela de carregamento após 2 segundos
+    setTimeout(() => {
+      loading();
+      initializeCarousel(); // Inicializa o carrossel após a tela de carregamento
+    }, 2000);
+  };
