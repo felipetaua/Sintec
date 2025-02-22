@@ -13,48 +13,58 @@ window.onload = function () {
   }, 2000);
 };
 
-// Função para inicializar o carrossel
+// Função para inicializar o carrossel (caso exista na página)
 function initializeCarousel() {
-  // Seleção dos elementos do carousel
   const carouselContainer = document.querySelector(".carouselContainer");
-  const eachCarousel = document.querySelector(".eachCarousel").clientWidth;
   const allEachCarousel = document.querySelectorAll(".eachCarousel");
   const allIndicator = document.querySelectorAll(".indicator");
 
+  // Verifica se o carrossel existe na página antes de executar o código
+  if (!carouselContainer || allEachCarousel.length === 0 || allIndicator.length === 0) {
+    console.warn("Carrossel não encontrado na página. Ignorando inicialização.");
+    return;
+  }
+
+  const eachCarouselWidth = allEachCarousel[0].clientWidth;
   let currentSlide = 0;
   const totalSlides = allEachCarousel.length;
+  let autoSlideInterval;
 
-  // Função para alternar os slides
+  // Alterna os slides
   const slideCarousel = (index) => {
-    for (let x = 0; x < totalSlides; x++) {
-      if (x === index) {
-        allEachCarousel[x].classList.add("eachCarouselBorder");
-        allIndicator[x].classList.add("activeIndicator");
-      } else {
-        allEachCarousel[x].classList.remove("eachCarouselBorder");
-        allIndicator[x].classList.remove("activeIndicator");
-      }
-    }
-    // Ajusta a rolagem horizontal da div do carousel
-    carouselContainer.scrollLeft = index * (eachCarousel + 10); // Ajuste de espaçamento de 10px entre slides
+    allEachCarousel.forEach((slide, i) => {
+      slide.classList.toggle("eachCarouselBorder", i === index);
+      allIndicator[i]?.classList.toggle("activeIndicator", i === index);
+    });
+
+    // Ajusta a rolagem horizontal do carrossel
+    carouselContainer.scrollLeft = index * (eachCarouselWidth + 10);
     currentSlide = index;
   };
 
-  // Função para iniciar a troca automática dos slides
+  // Inicia a troca automática dos slides
   const startAutoSlide = () => {
-    setInterval(() => {
-      // Atualiza para o próximo slide
-      const nextSlide = (currentSlide + 1) % totalSlides; // Reinicia no primeiro slide após o último
+    autoSlideInterval = setInterval(() => {
+      const nextSlide = (currentSlide + 1) % totalSlides;
       slideCarousel(nextSlide);
-    }, 4000); // Troca de slide a cada 4 segundos
+    }, 4000);
   };
 
-  // Inicializa o primeiro slide
-  slideCarousel(currentSlide);
+  // Para a troca automática ao passar o mouse
+  const stopAutoSlide = () => clearInterval(autoSlideInterval);
 
-  // Inicia a troca automática dos slides
+  // Adiciona eventos para interatividade
+  carouselContainer.addEventListener("mouseenter", stopAutoSlide);
+  carouselContainer.addEventListener("mouseleave", startAutoSlide);
+
+  // Inicializa o carrossel
+  slideCarousel(currentSlide);
   startAutoSlide();
 }
+
+// Executa a função apenas quando o DOM estiver pronto
+document.addEventListener("DOMContentLoaded", initializeCarousel);
+
 
 // Header toggle
 const bar = document.getElementById("bar");
@@ -80,3 +90,18 @@ const scrollReveal = ScrollReveal({
 
 ScrollReveal().reveal(".events-card", { delay: 500 });
 ScrollReveal().reveal(".eachEvent", { delay: 500 });
+
+
+// resolvendo a promisse erro do console
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("/sw.js")
+      .then((registration) => {
+        console.log("Service Worker registrado com sucesso!", registration);
+      })
+      .catch((error) => {
+        console.log("Falha ao registrar o Service Worker:", error);
+      });
+  });
+}

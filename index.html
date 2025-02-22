@@ -7,9 +7,9 @@
     <!-- css -->
     <link rel="stylesheet" href="./styles/commonStyle.css">
     <link rel="stylesheet" href="./styles/ModalEventos.css">
-    <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/cardEventos.css">
     <link rel="stylesheet" href="./styles/loading.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- minhatura -->
@@ -509,22 +509,6 @@
     </div>
     </div>
     <script src="https://unpkg.com/scrollreveal"></script>
-    
-    
-    <script>
-        
-        // Função de carregamento
-    function loading() {
-      document.getElementsByClassName('loading')[0].style.display = "none";
-      document.getElementsByClassName('site')[0].style.display = "block";
-    }
-
-    // Aguarde o carregamento completo da página para ocultar a tela de carregamento
-    window.onload = function() {
-      setTimeout(loading, 2000); // 2 segundos para exibir a tela de carregamento antes de mostrar o site
-    };
-    </script>
-    <script src="./script.js"></script>
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
@@ -534,6 +518,7 @@
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
+        </script>
+    <script src="./script.js"></script>
 </body>
 </html>

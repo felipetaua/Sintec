@@ -1,4 +1,4 @@
-@import(./style.css);
+
 
 /* Definição de tamanhos e margens */
 :root {
@@ -31,7 +31,10 @@ body {
     height: var(--w-size);
     background-color: transparent;
     border: none;
-    -webkit-user-select: none;
+    user-select: none; /* Padrão moderno */
+    -webkit-user-select: none; /* Safari e versões mais antigas do Chrome */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer */
     z-index: 99;
 }
 
