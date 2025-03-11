@@ -1,0 +1,107 @@
+.events-card {
+  background-color: white;
+  border-radius: 18px;
+  padding: 30px 60px 30px 60px;
+  margin-top: 40px;
+  margin: 30px;
+}
+
+.events-card h3 {
+  color: black;
+  padding-bottom: 15px;
+}
+
+.events-card p {
+  color: black;
+}
+
+.events-alert {
+  list-style-type: none;
+}
+
+.texto-alerta {
+  color: rgb(226, 59, 59) !important; 
+}
+
+@media screen and (min-width: 800px) {
+  .events-card {
+    background-color: white;
+    border-radius: 18px;
+    padding: 30px 120px 30px 120px;
+    margin-top: 40px;
+    margin: 30px;
+  }
+
+  .events-card h3 {
+    color: black;
+    font-size: 2rem;
+    padding-bottom: 20px;
+  }
+
+  .SectionQuestion {
+    font-size: 2rem;
+  }
+
+
+}
+
+@media screen and (max-width: 500px) {
+  .events-card {
+    margin: 15px 10px 20px 10px;
+  }
+
+  .SectionQuestion {
+    padding: 10px 20px 10px 20px;
+  }
+
+  .events-card p {
+    font-size: 1rem;
+  }
+
+  .events-card ul li {
+    color: #000;
+    font-size: 1rem;
+  }
+
+}
+
+.SectionQuestion {
+  padding: 15px 40px 15px 40px;
+}
+
+.SectionQuestion h2 {
+  margin-bottom: 10px;
+}
+
+.SectionQuestion p {
+  margin-bottom: 10px;
+}
+
+.EventosSectionImg {
+  width: 150px;
+  height: 150px;
+  border-radius: 30px;
+}
+
+.events-card p {
+  font-size: 0.8rem;
+}
+
+.events-card h3 {
+  font-size: 1.1rem;
+}
+
+.events-card ul li {
+  color: #000;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .events-card p {
+    font-size: 1.2rem;
+  }
+
+  .events-card h3 {
+    font-size: 1.5rem;
+  }
+}

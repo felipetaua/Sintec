@@ -1,0 +1,188 @@
+
+
+/* Definição de tamanhos e margens */
+:root {
+    --w-size: 200px;
+    --w-margin: calc(-1 * var(--w-size) / 2);
+    --b-size: 70%;
+    --box-loading-width: var(--b-size);
+    --box-loading-height: var(--b-size);
+    --box-loading-margin: calc((100% - var(--box-loading-height)) / 2) calc((100% - var(--box-loading-width)) / 2);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  background-color: var(--lightDark);
+}
+
+.loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: var(--w-margin);
+    width: var(--w-size);
+    height: var(--w-size);
+    background-color: transparent;
+    border: none;
+    user-select: none; /* Padrão moderno */
+    -webkit-user-select: none; /* Safari e versões mais antigas do Chrome */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer */
+    z-index: 99;
+}
+
+.loading .box-wrap {
+    width: var(--box-loading-width);
+    height: var(--box-loading-height);
+    margin: var(--box-loading-margin);
+    position: relative;
+    transform: rotate(-45deg);
+}
+
+.loading .box-wrap .box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(135, 0, 0, .6);
+    background: linear-gradient(to right, #141562, #486FBC, #EAB5A1, #8DD6FF, #4973C9, #D07CA7, #F4915E, #F5919E, #B46F89, #141562, #486FBC);
+    background-position: 0% 50%;
+    background-size: 1000% 1000%;
+    visibility: hidden;
+}
+
+.loading .box-wrap .box.one {
+    animation: moveGradient 15s infinite, oneMove 3.5s infinite;
+}
+
+.loading .box-wrap .box.two {
+    animation: moveGradient 15s infinite, twoMove 3.5s 0.15s infinite;
+}
+
+.loading .box-wrap .box.three {
+    animation: moveGradient 15s infinite, threeMove 3.5s 0.3s infinite;
+}
+
+.loading .box-wrap .box.four {
+    animation: moveGradient 15s infinite, fourMove 3.5s 0.575s infinite;
+}
+
+.loading .box-wrap .box.five {
+    animation: moveGradient 15s infinite, fiveMove 3.5s 0.725s infinite;
+}
+
+.loading .box-wrap .box.six {
+    animation: moveGradient 15s infinite, sixMove 3.5s 0.875s infinite;
+}
+
+@keyframes moveGradient {
+    to {
+        background-position: 100% 50%;
+    }
+}
+
+/* Definindo os keyframes para cada animação */
+
+@keyframes oneMove {
+    0%, 14.2857%, 100% {
+        visibility: visible;
+        clip-path: inset(0% 35% 70% round 5%);
+    }
+    28.5714% {
+        clip-path: inset(35% round 5%);
+    }
+    42.8571%, 57.1428% {
+        clip-path: inset(35% 70% 35% 0 round 5%);
+    }
+    71.4285%, 85.7142% {
+        clip-path: inset(0% 70% 70% 0 round 5%);
+    }
+}
+
+@keyframes twoMove {
+    0%, 14.2857%, 100% {
+        visibility: visible;
+        clip-path: inset(0% 70% 70% 0 round 5%);
+    }
+    28.5714%, 42.8571% {
+        clip-path: inset(0% 35% 70% round 5%);
+    }
+    57.1428% {
+        clip-path: inset(35% round 5%);
+    }
+    71.4285%, 85.7142% {
+        clip-path: inset(35% 70% 35% 0 round 5%);
+    }
+}
+
+@keyframes threeMove {
+    0%, 14.2857%, 100% {
+        visibility: visible;
+        clip-path: inset(35% 70% 35% 0 round 5%);
+    }
+    28.5714%, 42.8571% {
+        clip-path: inset(0% 70% 70% 0 round 5%);
+    }
+    57.1428%, 71.4285% {
+        clip-path: inset(0% 35% 70% round 5%);
+    }
+    85.7142% {
+        clip-path: inset(35% round 5%);
+    }
+}
+
+@keyframes fourMove {
+    0%, 14.2857%, 100% {
+        visibility: visible;
+        clip-path: inset(35% 0% 35% 70% round 5%);
+    }
+    28.5714% {
+        clip-path: inset(35% round 5%);
+    }
+    42.8571%, 57.1428% {
+        clip-path: inset(70% 35% 0% 35% round 5%);
+    }
+    71.4285%, 85.7142% {
+        clip-path: inset(70% 0 0 70% round 5%);
+    }
+}
+
+@keyframes fiveMove {
+    0%, 14.2857%, 100% {
+        visibility: visible;
+        clip-path: inset(70% 0 0 70% round 5%);
+    }
+    28.5714%, 42.8571% {
+        clip-path: inset(35% 0% 35% 70% round 5%);
+    }
+    57.1428% {
+        clip-path: inset(35% round 5%);
+    }
+    71.4285%, 85.7142% {
+        clip-path: inset(70% 35% 0% 35% round 5%);
+    }
+}
+
+@keyframes sixMove {
+    0%, 14.2857%, 100% {
+        visibility: visible;
+        clip-path: inset(70% 35% 0% 35% round 5%);
+    }
+    28.5714%, 42.8571% {
+        clip-path: inset(70% 0 0 70% round 5%);
+    }
+    57.1428%, 71.4285% {
+        clip-path: inset(35% 0% 35% 70% round 5%);
+    }
+    85.7142% {
+        clip-path: inset(35% round 5%);
+    }
+}

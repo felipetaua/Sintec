@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Reset e Variáveis de Paleta */
+:root {
+  --black: #000;
+  --white: #ffffff;
+  --lightgrey: #f1f1f1;
+  --darkblue: #0d102c;
+  --primarycolor: #3d51f2;
+  --secondarycolor: #5670ef;
+  --lightDark: #080a25;
+  --darkText: #8388b4;
+  --primary: #f7941d;
+  --red: #e94560;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--darkblue);
+  color: var(--white);
+}
+
+/* Container do Quiz */
+.quiz-container {
+  max-width: 600px;
+  margin: 2em auto;
+  background: var(--lightDark);
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Pergunta */
+.quiz-container .question {
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+  color: var(--white);
+  text-align: center;
+}
+
+/* Lista de Opções */
+.options {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.options li {
+  margin: 10px 0;
+}
+
+.options button {
+  width: 100%;
+  background: var(--primarycolor);
+  color: var(--white);
+  font-size: 1rem;
+  padding: 0.8em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.options button:hover {
+  background: var(--secondarycolor);
+}
+
+/* Botão de Próxima Pergunta */
+#next {
+  background: var(--primary);
+  color: var(--white);
+  font-size: 1rem;
+  padding: 0.8em 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1.5em;
+  transition: background 0.3s ease;
+}
+
+#next:hover {
+  background: var(--secondarycolor);
+}
+
+/* Resultado */
+.result {
+  font-size: 1.2rem;
+  margin-top: 1em;
+  color: var(--primary);
+}

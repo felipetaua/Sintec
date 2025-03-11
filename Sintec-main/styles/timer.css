@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.heading {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.description {
+    color: #d1d1d1;
+    font-size: 18px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px; 
+    flex-wrap: wrap; /* Garante que os itens fiquem na mesma linha ou quebrem para a próxima, quando necessário */
+}
+
+.sub_timer {
+    flex: 1; /* Permite que as divs ocupem proporcionalmente o espaço disponível */
+    min-width: 120px; /* Tamanho mínimo para os blocos não ficarem muito pequenos */
+    max-width: 200px; /* Tamanho máximo para garantir boa visualização em telas maiores */
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.sub_timer:hover {
+    transform: scale(1.05); /* Aumento ao passar o mouse */
+}
+
+.digit {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.digit_name {
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: 400;
+}
+
+
+@media (max-width: 768px) {
+    .timer {
+        gap: 15px;
+    }
+
+    .sub_timer {
+        min-width: 100px;
+        max-width: 150px;
+    }
+
+    .digit {
+        font-size: 2.5rem;
+    }
+
+    .digit_name {
+        font-size: 0.9rem;
+    }
+
+    .heading {
+        font-size: 35px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sub_timer {
+        min-width: 80px;
+        max-width: 120px;
+    }
+
+    .digit {
+        font-size: 2rem;
+    }
+
+    .digit_name {
+        font-size: 0.8rem;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}
+
+.popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.popup.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.popup.hidden {
+    display: none;
+}

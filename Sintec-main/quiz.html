@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/quiz.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/loading.css">
+  <title>Quiz de Tecnologia</title>
+  <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- minhatura -->
+    <link rel="shortcut icon" href="./img/logo-mini.ico" type="image/x-icon">
+  <script src="./loading.js"></script>
+</head>
+<body onLoad="loading()">
+  <div class="loading">
+    <div class="box-wrap">
+        <div class="box one"></div>
+        <div class="box two"></div>
+        <div class="box three"></div>
+        <div class="box four"></div>
+        <div class="box five"></div>
+        <div class="box six"></div>
+    </div>
+  </div>
+  
+  <div class="site">
+    <!-- Header -->
+    <header>
+        <div id="logo">
+            <a href="./index.html">
+                <img src="./img/oficial-logo.png" alt="" height="170px" >
+            </a>
+        </div>
+        <ul class="nav" id="nav">
+            <ul class="navLogo">
+                <a href="./index.html">
+                     <img src="./img/oficial-logo.png" alt="" height="170px">
+               </a>
+            </ul>
+
+            <li class="nav-link"><a href="./index.html">Início</a></li>
+            <li class="nav-link"><a href="./eventos.html">Eventos</a></li>
+            <li class="nav-link"><a href="./aboutus.html">Conheça</a></li>
+            <li class="nav-link"><a href="./contact.html">Forms</a></li>
+            <li class="nav-link"><a href="./convite.html">Convite</a></li>
+            <li class="nav-link"><a href="./quiz.html">Jogo</a></li>
+            <li class="sociallinkContainer">
+                <img class="sociallink" src="./img/fabook-icon-white.svg" alt="">
+                <img class="sociallink" src="./img/inkedin-icon-white.svg" alt="">
+                <img class="sociallink" src="./img/whatsapp-icon-white.svg" alt="">
+            </li>
+        </ul>
+        <div id="barContainer">
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    
+    <div class="quiz-container">
+      <h1>Quiz de Tecnologia</h1>
+      <div id="quiz">
+        <p class="question" id="question">Carregando...</p>
+        <ul class="options" id="options"></ul>
+        <button id="next" style="display: none;">Próxima Pergunta</button>
+        <p class="result" id="result" style="display: none;"></p>
+      </div>
+    </div>
+    
+    <footer>
+        <div class="joinSection">
+            <div class="joinDesc">
+                <h1 class="sectionHeader">Avalie sua Experiência</h1>
+                <p class="sectionPara">
+                    Deixe seu Feedback para os desenvolvedores, Agradecido!
+                </p>
+            </div>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYKqUSNiXhlb1R_rwDb-14gPTeM5TWgQZ38eyReqPvOvLxOg/viewform?vc=0&c=0&w=1&flr=0"><button class="btn primaryBtn"> Feedback!</button></a>
+        </div>
+        <div class="footerlinksContainer">
+            <div class="footerAboutus">
+                <img src="./img/oficial-logo.png" alt="" height="100px">
+                <p class="darkPara">A SINTEC é organizada pelo alunos e instrutores do Técnico de Informática para Internet do Senac Nova Londrina que desejam compartilhar seu conhecimento e paixão pelo mundo digital.
+                </p>
+                <div class="footersociallinkContainer">
+                    <img class="sociallink" src="./img/fabook-icon-white.svg" alt="">
+                    <img class="sociallink" src="./img/inkedin-icon-white.svg" alt="">
+                    <img class="sociallink" src="./img/whatsapp-icon-white.svg" alt="">
+                </div>
+            </div>
+
+            <div class="footerlink">
+                <h1 class="linkTitle">Explore</h1>
+                <a href="./aboutus.html" class="eachLink">About us</a>
+                <a href="./pageError.html" class="eachLink">FAQ</a>
+                <a href="./pageError.html" class="eachLink">Blog</a>
+                <a href="https://github.com/felipetaua" class="eachLink">Contact</a>
+            </div>
+
+            <div class="footerlink">
+                <h1 class="linkTitle">Nav</h1>
+                <a href="./index.html" class="eachLink">Home</a>
+                <a href="./eventos.html" class="eachLink">Programação</a>
+                <a href="./aboutus.html" class="eachLink">Conheça</a>
+                <a href="./contact.html" class="eachLink">Forms</a>
+            </div>
+
+            <div class="footerlink">
+                <h1 class="linkTitle">Resource</h1>
+                <a href="./tecnology.html" class="eachLink">Tecnology</a>
+                <a href="pageError.html" class="eachLink">Page Error</a>
+                <a href="./licences.html" class="eachLink">License</a>
+            </div>
+        </div>
+
+        <div class="footerCopyright">
+             <p>&copy; Direitos Reservados SINTEC 2024 desenvolvido por <a href="https://github.com/felipetaua" class="developedBy" target="_blank">felipetauaSystems</a>.</p>
+        </div>
+    </footer>
+  </div>
+  <script src="quiz.js"></script>
+    <script>
+        
+        // Função de carregamento
+    function loading() {
+      document.getElementsByClassName('loading')[0].style.display = "none";
+      document.getElementsByClassName('site')[0].style.display = "block";
+    }
+
+    // Aguarde o carregamento completo da página para ocultar a tela de carregamento
+    window.onload = function() {
+      setTimeout(loading, 2000); // 2 segundos para exibir a tela de carregamento antes de mostrar o site
+    };
+    </script>
+  <script src="./script.js"></script>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+</html>
+
